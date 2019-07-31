@@ -1,0 +1,265 @@
+
+body, html{
+    margin: 0;
+    width:100vw;
+}
+.page-wrapper{
+    height:170px;
+    display:flex;
+    margin:0;
+    background-color:white;
+    padding:10px;
+    flex-direction: row;
+    justify-content: space-between;
+    /*align-content: center;*/
+    /*text-align: center;*/
+}
+/*.caption{*/
+/*    display:flex;*/
+/*    align-content: center;*/
+/*    text-align: center;*/
+/*    font-size:30px;*/
+/*    font-style:italic;*/
+/*    color:white;*/
+/*    margin-left:-130px;*/
+    
+/*}*/
+.home{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items:center;
+    text-align:center;
+    height:100px;
+    padding:0px 500px;
+    width:100vw;
+    
+}
+
+.home a {
+    text-decoration:none;
+    font-size:2em;
+    color:#666;
+    
+}
+
+
+.list{
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    text-align:center;
+    font-size:3em;
+    color:#666;
+}
+.order{
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    text-align:center;
+    font-size:3em;
+    color:#666;
+    font-style:bold;
+    background-color:white;
+
+    
+    
+}
+
+
+#head {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#head img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    margin-left:-50px;
+    
+}
+
+#logo{
+    
+font-size: 5em;
+margin-top:50px;
+color:white;
+}
+#box{
+    display:flex;
+    justify-content:center;
+    align-content: center;
+    text-align: center;
+    margin-top:30px;
+    
+}
+#search{
+   height:30px;
+   width:50%;
+   padding:5px;
+   border: 2px solid black;
+   border-radius: 4px;
+   margin-right:10px;
+    
+}
+.tmenu{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-content: center;
+    text-align: center;
+    margin-top:30px;
+    width:100%;
+    background-color:#666;
+    height:300px;
+   
+   
+    
+}
+.food{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-content: center;
+    text-align: center;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+    border-color:white;
+    color: #666;
+    background-color:white;
+    width:250px;
+    padding:5px;
+    
+
+}
+
+img{
+    width:90px;
+    height:120px;
+}
+#button{
+   border: 2px solid black;
+   border-radius: 4px;
+   background-color:white;
+   font-style:bold;
+   width:150px;
+   height:20px;
+   color:#666;
+   display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-content: center;
+    text-align: center;
+  
+    
+}
+
+#kg{
+    text-align: left;
+    
+    
+}
+#price{
+    text-align: left;
+}
+#page-wrapper2{
+    height:80px;
+    display:flex;
+    margin:0;
+   background-color:#666;
+    padding:20px;
+   flex-direction: row;
+   justify-content: space-between;
+   align-content: center;
+   text-align: center;
+}
+.page-full {
+    background-color: orange;
+    min-height:100vh;
+    height:100%;
+    width: 100vw;
+}
+
+.white {
+    height:10px;
+    background-color:white;
+}
+
+.register-form {
+    display:flex;
+    flex-direction:column;
+    padding: 20px;
+    margin-top:10px;
+    justify-content:top;
+    align-items:center;
+    background-color: #666;
+    height:100%;
+}
+
+.register-form div {
+    margin:10px;
+    }
+.register-form input {
+    height: 25px;
+    width: 350px;
+    border:1px solid brown;
+    padding: 5px;
+    }
+    
+#cart-form input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.contact{
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    text-align:center;
+    font-size:3em;
+    color:#666;
+    font-style:bold;
+    margin-top:200px;
+    
+}
+
+.flex-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content:center;
+    padding:10px;
+}
+
+.flex-start input[type=number] {
+    width:50px;
+    height:25px;
+    border-radius:2px;
+}
+
+.mytable {
+    margin-left:150px;
+    width: 75%;
+}
+
+.flex-mid {
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-content: center;
+    padding:30px;
+
+    
+}

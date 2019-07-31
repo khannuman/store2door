@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    cart
+{% endblock %}
+
+{% block main %}
+      <div class="list"> 
+        <p>LIST IF ITEMS</p>
+      </div>
+      <div class="items">
+        <table class="table table-splitted mytable">
+  <thead>
+    <tr>
+      <th scope="col">Items</th>
+      <th scope="col">Price</th>
+      <th scope="col">quantity</th>
+      <th scope="col">total</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for item in selected %}
+    <tr>
+      <td>{{ item["item_name"] }}</td>
+      <td>{{ item["item_price"] }}</td>
+      <td>{{ item["item_quantity"] }}</td>
+      <td>{{ (item["item_quantity"] * item["item_price"]) | abs }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="3"></td>
+      <td>{{ total_amount }}</td>
+    </tr>
+  </tfoot>
+</table>
+
+<h3 class="contact">Contact Form</h3>
+
+<div class="container">
+  <form action="/cart" autocomplete="off" method="post" id="cart-form">
+    <label for="name">Name</label>
+    <input type="text" id="name"class="form-control" name="name" required placeholder="name..">
+    
+    <label for="subject">address</label>
+    <textarea id="subject" name="address" class="form-control" required placeholder="enter your address"></textarea>
+    <label for="pno">mobile</label>
+    <input type="tel" id="pno" class="form-control" name="mobile" required pattern="{0-9}{10}" placeholder="enter phone number">
+    <div class="flex-mid">
+      <button type="submit" class="btn btn-primary" id="submit-btn">PLACE ORDER</button>
+    </div>
+
+    
+  </form>
+</div>
+
+{% endblock %}

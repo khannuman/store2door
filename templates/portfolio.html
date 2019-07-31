@@ -1,0 +1,187 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    portfolio
+{% endblock %}
+
+{% block main %}
+<form id= "box">
+        <input name="search" id="search" type="text" placeholder="search your items here" required="">
+        <input id="submit" type="submit" value="search" class="btn btn-primary">
+    </form>
+    
+    <form action="/portfolio" autocomplete="off" method="post">
+    <div id="tmenu1" class="tmenu">
+        <div class="food">
+            <div class="ficons"><img src="/static/atta.jpeg"></div>
+            <div> chakki fresh atta</div>
+            <div id="kg"> 10kg</div>
+            <div id="price">price: ₹245</div>
+            <div class="flex-start">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" name="item1" value="101" class="custom-control-input" id="customSwitch1">
+                    <label class="custom-control-label" for="customSwitch1">Add</label>
+                </div>
+                <div>
+                    <label>Quantity
+                    <input name="item1-quantity" min="1" max="8" type="number" step="1" placeholder="1"></label>
+                </div>
+            </div>    
+        </div>
+        <div class="food">
+            <div class="ficons"><img src="/static/parleg..jpg"></div>
+            <div> Parle-G Gluco Biscuit</div>
+            <div id="kg">800g</div>
+            <div id="price">price: ₹45</div>
+            <div class="flex-start">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" name="item2" value="102" class="custom-control-input" id="customSwitch2">
+                    <label class="custom-control-label" for="customSwitch2">Add</label>
+                </div>
+                <div>
+                    <label>Quantity
+                    <input name="item2-quantity" min="1" max="8" type="number" step="1" placeholder="1"></label>
+                </div>
+            </div>
+        </div>
+         <div class="food">
+            <div class="ficons"><img src="/static/maggie.jpg"></div>
+            <div> maggie noodles</div>
+            <div id="kg">300g</div>
+            <div id="price">price: ₹65</div>
+            <div class="flex-start">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" name="item3" value="103" class="custom-control-input" id="customSwitch3">
+                    <label class="custom-control-label" for="customSwitch3">Add</label>
+                </div>
+                <div>
+                    <label>Quantity
+                    <input name="item3-quantity" min="1" max="8" type="number" step="1" placeholder="1"></label>
+                </div>
+            </div>
+        </div>
+         <div class="food">
+            <div class="ficons"><img src="/static/park.jpeg"></div>
+            <div> Park avenue Signature</div>
+            <div id="kg">130ml</div>
+            <div id="price">price: ₹145</div>
+            <div class="flex-start">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" name="item4" value="104" class="custom-control-input" id="customSwitch4">
+                    <label class="custom-control-label" for="customSwitch4">Add</label>
+                </div>
+                <div>
+                    <label>Quantity
+                    <input name="item4-quantity" min="1" max="8" type="number" step="1" placeholder="1"></label>
+                </div>
+            </div>
+        </div>
+         <div class="food">
+            <div class="ficons"><img src="/static/oil.jpg"></div>
+            <div>fortune soya oil</div>
+            <div id="kg">1lr</div>
+            <div id="price">price: ₹88</div>
+            <div class="flex-start">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" name="item5" value="105" class="custom-control-input" id="customSwitch5">
+                    <label class="custom-control-label" for="customSwitch5">Add</label>
+                </div>
+                <div>
+                    <label>Quantity
+                    <input name="item5-quantity" min="1" max="8" type="number" step="1" placeholder="1"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div id="tmenu2" class="tmenu">
+        <div class="food">
+            <div class="ficons"><img src="/static/good.jpg"></div>
+            <div>Good Day Biscuits</div>
+            <div id="kg"> 100gm</div>
+            <div id="price">price: ₹20</div>
+            <div class="flex-start">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" name="item6" value="106" class="custom-control-input" id="customSwitch6">
+                    <label class="custom-control-label" for="customSwitch6">Add</label>
+                </div>
+                <div>
+                    <label>Quantity
+                    <input name="item6-quantity" min="1" max="8" type="number" step="1" placeholder="1"></label>
+                </div>
+            </div>
+        </div>
+        <div class="food">
+            <div class="ficons"><img src="/static/tata.jpg"></div>
+            <div> TATA Salt</div>
+            <div id="kg">1kg</div>
+            <div id="price">price: ₹17</div>
+            <div class="flex-start">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" name="item7" value="107" class="custom-control-input" id="customSwitch7">
+                    <label class="custom-control-label" for="customSwitch7">Add</label>
+                </div>
+                <div>
+                    <label>Quantity
+                    <input name="item7-quantity" min="1" max="8" type="number" step="1" placeholder="1"></label>
+                </div>
+            </div>
+        </div>
+         <div class="food">
+            <div class="ficons"><img src="/static/boat.jpg"></div>
+            <div>PaperBoat Juice</div>
+            <div id="kg">100g</div>
+            <div id="price">price: ₹25</div>
+            <div class="flex-start">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" name="item8" value="108" class="custom-control-input" id="customSwitch8">
+                    <label class="custom-control-label" for="customSwitch8">Add</label>
+                </div>
+                <div>
+                    <label>Quantity
+                    <input name="item8-quantity" min="1" max="8" type="number" step="1" placeholder="1"></label>
+                </div>
+            </div>
+        </div>
+         <div class="food">
+            <div class="ficons"><img src="/static/froti.jpg"></div>
+            <div>Frooti Juice</div>
+            <div id="kg">130ml</div>
+            <div id="price">price: ₹35</div>
+            <div class="flex-start">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" name="item9" value="109" class="custom-control-input" id="customSwitch9">
+                    <label class="custom-control-label" for="customSwitch9">Add</label>
+                </div>
+                <div>
+                    <label>Quantity
+                    <input name="item9-quantity" min="1" max="8" type="number"step="1" placeholder="1"></label>
+                </div>
+            </div>
+        </div>
+         <div class="food">
+            <div class="ficons"><img src="/static/harpic.jpg"></div>
+            <div>Harpic Power Plus</div>
+            <div id="kg">1lr</div>
+            <div id="price">price: ₹68</div>
+            <div class="flex-start">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" name="item10" value="110" class="custom-control-input" id="customSwitch10">
+                    <label class="custom-control-label" for="customSwitch10">Add</label>
+                </div>
+                <div>
+                    <label>Quantity
+                    <input name="item10-quantity" min="1" max="8" type="number" step="1" placeholder="1"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex-mid">
+    <button class="btn btn-primary">Add items to cart</button>
+    </div>
+    
+    </form>
+    
+    
+    
+    
+{% endblock %}
