@@ -3,11 +3,11 @@ body, html{
     margin: 0;
     width:100vw;
 }
-.s2dimg{
+/* .s2dimg{
     height:100vh;
     width :50px;
     
-}
+} */
 .page-wrapper{
     height:170px;
     display:flex;
